@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb+srv://myUser:qRJgJmsJppqiaXws@crud-cluster.ag3t0.mongodb.net/?retryWrites=true&w=majority&appName=crud-cluster
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"

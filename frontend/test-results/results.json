@@ -1,0 +1,163 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\cse22-010\\OneDrive - Botswana Accountancy College\\Desktop\\CRUD App\\frontend\\playwright.config.js",
+    "rootDir": "C:/Users/cse22-010/OneDrive - Botswana Accountancy College/Desktop/CRUD App/frontend/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/cse22-010/OneDrive - Botswana Accountancy College/Desktop/CRUD App/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/cse22-010/OneDrive - Botswana Accountancy College/Desktop/CRUD App/frontend/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.47.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "item.test.js",
+      "file": "item.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "should load the page and check form elements",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 681,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-07T21:44:14.056Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2cb05a69f4988090902a-37d1bba5389e036f16df",
+          "file": "item.test.js",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "should create and list items",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30032,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\cse22-010\\OneDrive - Botswana Accountancy College\\Desktop\\CRUD App\\frontend\\tests\\item.test.js",
+                        "column": 16,
+                        "line": 46
+                      },
+                      "message": "Error: page.screenshot: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m 44 |\u001b[39m\n \u001b[90m 45 |\u001b[39m     \u001b[90m// Take a screenshot for debugging purposes\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mscreenshot({ path\u001b[33m:\u001b[39m \u001b[32m\"screenshot.png\"\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m\"Screenshot taken: screenshot.png\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[90m// Re-throw the error to ensure the test fails\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\cse22-010\\OneDrive - Botswana Accountancy College\\Desktop\\CRUD App\\frontend\\tests\\item.test.js:46:16\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Waiting for the list to update\n"
+                    }
+                  ],
+                  "stderr": [
+                    {
+                      "text": "An error occurred while waiting for the list to update: page.waitForSelector: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('ul') to be visible\u001b[22m\n\n    at \u001b[90mC:\\Users\\cse22-010\\OneDrive - Botswana Accountancy College\\Desktop\\CRUD App\\frontend\\\u001b[39mtests\\item.test.js:27:16 {\n  [\u001b[32mSymbol(step)\u001b[39m]: {\n    stepId: \u001b[32m'pw:api@6'\u001b[39m,\n    location: {\n      file: \u001b[32m'C:\\\\Users\\\\cse22-010\\\\OneDrive - Botswana Accountancy College\\\\Desktop\\\\CRUD App\\\\frontend\\\\tests\\\\item.test.js'\u001b[39m,\n      line: \u001b[33m27\u001b[39m,\n      column: \u001b[33m16\u001b[39m,\n      function: \u001b[90mundefined\u001b[39m\n    },\n    category: \u001b[32m'pw:api'\u001b[39m,\n    title: \u001b[32m'page.waitForSelector(ul)'\u001b[39m,\n    apiName: \u001b[32m'page.waitForSelector'\u001b[39m,\n    params: { selector: \u001b[32m'ul'\u001b[39m, timeout: \u001b[33m60000\u001b[39m },\n    boxedStack: \u001b[90mundefined\u001b[39m,\n    steps: [],\n    complete: \u001b[36m[Function: complete]\u001b[39m,\n    endWallTime: \u001b[33m1725745485130\u001b[39m,\n    error: {\n      message: \u001b[32m'Error: page.waitForSelector: Test timeout of 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"  \\x1B[2m- waiting for locator('ul') to be visible\\x1B[22m\\n\"\u001b[39m,\n      stack: \u001b[32m'Error: page.waitForSelector: Test timeout of 30000ms exceeded.\\n'\u001b[39m +\n        \u001b[32m'Call log:\\n'\u001b[39m +\n        \u001b[32m\"  \\x1B[2m- waiting for locator('ul') to be visible\\x1B[22m\\n\"\u001b[39m +\n        \u001b[32m'\\n'\u001b[39m +\n        \u001b[32m'    at C:\\\\Users\\\\cse22-010\\\\OneDrive - Botswana Accountancy College\\\\Desktop\\\\CRUD App\\\\frontend\\\\tests\\\\item.test.js:27:16'\u001b[39m\n    }\n  }\n}\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2024-09-07T21:44:15.100Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2cb05a69f4988090902a-0b7997a1c008f92e5945",
+          "file": "item.test.js",
+          "line": 18,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-09-07T21:44:13.395Z",
+    "duration": 31855.290999999997,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
